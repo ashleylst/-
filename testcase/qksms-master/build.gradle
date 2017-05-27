@@ -1,0 +1,9 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:1.0.9'
+    }
+}
