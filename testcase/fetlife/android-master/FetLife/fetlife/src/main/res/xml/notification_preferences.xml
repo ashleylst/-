@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_notification_general">
+
+        <RingtonePreference
+            android:title="@string/settings_title_notification_ringtone"
+            android:key="@string/settings_key_notification_ringtone"
+            android:summary="@string/settings_summary_notification_ringtone"
+            android:ringtoneType="notification"
+            android:defaultValue="content://settings/system/notification_sound"/>
+
+        <ListPreference
+            android:title="@string/settings_title_notification_color"
+            android:key="@string/settings_key_notification_color"
+            android:summary="@string/settings_summary_notification_color"
+            android:entries="@array/settings_entries_notification_color"
+            android:entryValues="@array/settings_values_notification_color"
+            android:defaultValue="@string/settings_default_notification_color"/>
+
+        <ListPreference
+            android:title="@string/settings_title_notification_vibrate"
+            android:key="@string/settings_key_notification_vibrate"
+            android:summary="@string/settings_summary_notification_vibrate"
+            android:entries="@array/settings_entries_notification_vibrate"
+            android:entryValues="@array/settings_values_notification_vibrate"
+            android:defaultValue="@string/settings_default_notification_vibrate"/>
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_notification_text">
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_anonymtext"
+            android:defaultValue="@string/settings_default_notification_anonymtext"
+            android:title="@string/settings_title_notification_anonymtext"
+            android:summary="@string/settings_summary_notification_anonymtext" />
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_notification_enablement">
+        
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_info_enabled"
+            android:defaultValue="@string/settings_default_notification_info_enabled"
+            android:title="@string/settings_title_notification_info_enabled"
+            android:summary="@string/settings_summary_notification_info_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_messages_enabled"
+            android:defaultValue="@string/settings_default_notification_messages_enabled"
+            android:title="@string/settings_title_notification_messages_enabled"
+            android:summary="@string/settings_summary_notification_messages_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_friendrequests_enabled"
+            android:defaultValue="@string/settings_default_notification_friendrequests_enabled"
+            android:title="@string/settings_title_notification_friendrequests_enabled"
+            android:summary="@string/settings_summary_notification_friendrequests_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_loves_enabled"
+            android:defaultValue="@string/settings_default_notification_loves_enabled"
+            android:title="@string/settings_title_notification_loves_enabled"
+            android:summary="@string/settings_summary_notification_loves_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_comments_enabled"
+            android:defaultValue="@string/settings_default_notification_comments_enabled"
+            android:title="@string/settings_title_notification_comments_enabled"
+            android:summary="@string/settings_summary_notification_comments_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_mentions_enabled"
+            android:defaultValue="@string/settings_default_notification_mentions_enabled"
+            android:title="@string/settings_title_notification_mentions_enabled"
+            android:summary="@string/settings_summary_notification_mentions_enabled"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification_prerelease_enabled"
+            android:defaultValue="@string/settings_default_notification_prerelease_enabled"
+            android:title="@string/settings_title_notification_prerelease_enabled"
+            android:summary="@string/settings_summary_notification_prerelease_enabled"/>
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+</PreferenceScreen>

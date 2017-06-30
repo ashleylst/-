@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_feed_autoexpand">
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_like"
+            android:defaultValue="@string/settings_default_feed_auto_expand_like"
+            android:title="@string/settings_title_feed_auto_expand_like"
+            android:summary="@string/settings_summary_feed_auto_expand_like"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_relation"
+            android:defaultValue="@string/settings_default_feed_auto_expand_relation"
+            android:title="@string/settings_title_feed_auto_expand_relation"
+            android:summary="@string/settings_summary_feed_auto_expand_relation"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_comment"
+            android:defaultValue="@string/settings_default_feed_auto_expand_comment"
+            android:title="@string/settings_title_feed_auto_expand_comment"
+            android:summary="@string/settings_summary_feed_auto_expand_comment"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_profile"
+            android:defaultValue="@string/settings_default_feed_auto_expand_profile"
+            android:title="@string/settings_title_feed_auto_expand_profile"
+            android:summary="@string/settings_summary_feed_auto_expand_profile"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_media"
+            android:defaultValue="@string/settings_default_feed_auto_expand_media"
+            android:title="@string/settings_title_feed_auto_expand_media"
+            android:summary="@string/settings_summary_feed_auto_expand_media"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_post"
+            android:defaultValue="@string/settings_default_feed_auto_expand_post"
+            android:title="@string/settings_title_feed_auto_expand_post"
+            android:summary="@string/settings_summary_feed_auto_expand_post"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_event"
+            android:defaultValue="@string/settings_default_feed_auto_expand_event"
+            android:title="@string/settings_title_feed_auto_expand_event"
+            android:summary="@string/settings_summary_feed_auto_expand_event"/>
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_feed_auto_expand_group"
+            android:defaultValue="@string/settings_default_feed_auto_expand_group"
+            android:title="@string/settings_title_feed_auto_expand_group"
+            android:summary="@string/settings_summary_feed_auto_expand_group"/>
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+</PreferenceScreen>

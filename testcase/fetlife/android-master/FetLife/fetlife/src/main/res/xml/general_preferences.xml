@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_general_vanilla">
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_general_vanilla"
+            android:defaultValue="@string/settings_default_general_vanilla"
+            android:title="@string/settings_title_general_vanilla"
+            android:summary="@string/settings_summary_general_vanilla"/>
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+    <com.bitlove.fetlife.view.widget.BoldPreferenceCategory
+        android:title="@string/settings_category_general_start">
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_general_feed_as_start"
+            android:defaultValue="@string/settings_default_general_feed_as_start"
+            android:title="@string/settings_title_general_feed_as_start"
+            android:summary="@string/settings_summary_general_feed_as_start"/>
+
+    </com.bitlove.fetlife.view.widget.BoldPreferenceCategory>
+
+</PreferenceScreen>

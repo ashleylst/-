@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_key_notification_ringtone">settings_key_notification_ringtone</string>
+    <string name="settings_key_notification_color">settings_key_notification_color</string>
+    <string name="settings_key_notification_vibrate">settings_key_notification_vibrate</string>
+    <string name="settings_key_general_feed_as_start">settings_key_general_feed_as_start</string>
+    <string name="settings_key_general_vanilla">settings_key_general_vanilla</string>
+    <string name="settings_key_notification_anonymtext">notification_text_anonym</string>
+    <string name="settings_key_notification_messages_enabled">notification_messages_enabled</string>
+    <string name="settings_key_notification_friendrequests_enabled">notification_friendrequests_enabled</string>
+    <string name="settings_key_notification_others_enabled">notification_others_enabled</string>
+    <string name="settings_key_notification_info_enabled">notification_info_enabled</string>
+    <string name="settings_key_notification_prerelease_enabled">notification_prerelease_enabled</string>
+    <string name="settings_key_notification_loves_enabled">notification_loves_enabled</string>
+    <string name="settings_key_notification_comments_enabled">notification_comments_enabled</string>
+    <string name="settings_key_notification_mentions_enabled">notification_mentions_enabled</string>
+    <string name="settings_key_profile_password_always">preference_password_always</string>
+    <string name="settings_key_profile_clear_data">profile_clear_user_data</string>
+    <string name="settings_key_feed_auto_expand_like">settings_key_feed_auto_expand_like</string>
+    <string name="settings_key_feed_auto_expand_relation">settings_key_feed_auto_expand_relation</string>
+    <string name="settings_key_feed_auto_expand_group">settings_key_feed_auto_expand_group</string>
+    <string name="settings_key_feed_auto_expand_event">settings_key_feed_auto_expand_event</string>
+    <string name="settings_key_feed_auto_expand_profile">settings_key_feed_auto_expand_profile</string>
+    <string name="settings_key_feed_auto_expand_post">settings_key_feed_auto_expand_post</string>
+    <string name="settings_key_feed_auto_expand_comment">settings_key_feed_auto_expand_comment</string>
+    <string name="settings_key_feed_auto_expand_media">settings_key_feed_auto_expand_media</string>
+</resources>

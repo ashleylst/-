@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/listitem_vertical_margin">
+
+    <RelativeLayout
+        style="@style/FeedInnerListItem"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/feed_innerlist_icon"
+            android:visibility="gone"
+
+            style="@style/FeedInnerListAvatar"
+
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/feed_innerlist_single_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="left|center_vertical"
+
+            style="@style/FeedInnerListSingleText"
+
+            android:layout_toRightOf="@id/feed_innerlist_icon"
+            android:layout_alignParentTop="true"
+
+            android:maxLines="3"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/feed_innerlist_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/FeedInnerListHeader"
+
+            android:layout_toRightOf="@id/feed_innerlist_icon"
+            android:layout_alignParentTop="true"
+
+            android:maxLines="1"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/feed_innerlist_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/FeedInnerListUpperText"
+
+            android:layout_toRightOf="@id/feed_innerlist_icon"
+            android:layout_below="@id/feed_innerlist_header"
+
+            android:maxLines="2"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/feed_innerlist_caption"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/FeedInnerListRightText"
+
+            android:layout_below="@id/feed_innerlist_upper"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+
+    </RelativeLayout>
+</FrameLayout>

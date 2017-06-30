@@ -1,0 +1,68 @@
+<resources>
+    <style name="FeedItem">
+        <item name="android:background">@drawable/listitem_background_rounded</item>
+        <item name="android:padding">@dimen/listitem_padding</item>
+        <item name="android:layout_marginTop">@dimen/listitem_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/listitem_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/listitem_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/listitem_horizontal_margin</item>
+        <item name="android:minHeight">?android:listPreferredItemHeight</item>
+    </style>
+
+    <style name="FeedName" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/color_highlight</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:gravity">top</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedMeta" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:gravity">bottom</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedTime" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:gravity">top</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedAvatar">
+        <item name="android:layout_marginRight">@dimen/icon_margin</item>
+    </style>
+
+    <style name="FeedInnerListItem">
+        <item name="android:minHeight">?android:listPreferredItemHeight</item>
+    </style>
+
+    <style name="FeedInnerListHeader" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:gravity">top</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedInnerListUpperText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:gravity">top</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="FeedInnerListSingleText" parent="FeedInnerListUpperText">
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+
+    <style name="FeedInnerListLowerText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="FeedInnerListRightText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="FeedInnerListAvatar" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:layout_marginRight">@dimen/icon_margin</item>
+    </style>
+
+
+</resources>

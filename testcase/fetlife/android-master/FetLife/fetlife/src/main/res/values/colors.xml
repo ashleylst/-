@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#ff222222</color>
+
+    <color name="color_primary">#ff222222</color>
+    <color name="color_primary_dark">#ff111111</color>
+    <color name="color_secondary">#ffffff</color>
+    <color name="color_secondary_dark">#000000</color>
+
+    <color name="color_highlight">#ffff0000</color>
+
+    <color name="color_accent">#ff880000</color>
+    <color name="color_accent_light">#fffaffbd</color>
+    <color name="color_accent_gradient_dark">#ff700000</color>
+    <color name="color_accent_gradient_light">#ffa00000</color>
+    <color name="text_color_link">#fffaffbd</color>
+    <color name="text_color_link_dark">#ff880000</color>
+
+    <color name="text_color_primary">#ffffffff</color>
+    <color name="text_color_primary_dark">#e0e0e0</color>
+    <color name="text_color_secondary">#ff777777</color>
+    <color name="text_color_secondary_dark">#ff4a4a4a</color>
+    <color name="text_color_edit">#e0e0e0</color>
+    <color name="text_color_edit_dark">#000000</color>
+
+    <color name="text_color_error">#ff0000</color>
+
+    <color name="edit_background">#fffaffbd</color>
+    <color name="edit_background_dark">#fffaffbd</color>
+
+    <color name="area_background">#ffffff</color>
+    <color name="area_background_dark">#ff111111</color>
+    <color name="area_background_dark_invert">#aa111111</color>
+
+    <color name="color_accept">#32CD32</color>
+    <color name="color_reject">#cd0000</color>
+
+</resources>
