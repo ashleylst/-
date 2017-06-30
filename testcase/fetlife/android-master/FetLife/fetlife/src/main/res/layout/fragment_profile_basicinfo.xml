@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.screen.resource.profile.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/text_profile_row_location"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_profile_header_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/text_profile_header_location"
+                android:textColor="@color/text_color_secondary"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:id="@+id/text_profile_value_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_profile_row_relationship"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_profile_header_relationship"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/text_profile_header_relationships"
+                android:textColor="@color/text_color_secondary"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:id="@+id/text_profile_value_relationship"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColorLink="@color/color_accent_light"
+                android:gravity="left"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_profile_row_orientation"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_profile_header_orientation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/text_profile_header_orientation"
+                android:textColor="@color/text_color_secondary"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:id="@+id/text_profile_value_orientation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/text_profile_row_lookingfor"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_profile_header_lookingfor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/text_profile_header_looking_for"
+                android:textColor="@color/text_color_secondary"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:id="@+id/text_profile_value_lookingfor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

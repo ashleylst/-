@@ -1,0 +1,644 @@
+<resources>
+
+    <!-- *** Technical values *** -->
+
+    <string name="google_app_id" translatable="false">latex-fetish-123456</string>
+
+    <string name="message_sub_separator" translatable="false">" \@ "</string>
+
+
+    <!-- *** About screen *** -->
+
+    <string name="version_prefix">"App version: "</string>
+
+    <!--TODO: consider improving about layout -->
+    <string name="text_about">
+        <![CDATA[
+
+            <h1>Official FetLife App v%1$s</h1>
+
+            <p><b><br/>Got Bugs?</b></p>
+
+            If you find a bug please start by reading through the current list of open issues and if you can\'t find anything about your bug please submit a new bug at our GitHub page:
+            <br/>https://github.com/fetlife/android/issues
+
+            <p><b><br/>Version History</b></p>
+
+            <p/>v2.8.0<br/>
+                    <ul>
+                        <li>Improved Notification Settings</li>
+                    </ul>
+
+            <p/>v2.7.0<br/>
+                    <ul>
+                        <li>Find Member by Name</li>
+                        <li>Start conversation via Profile Screen only</li>
+                        <li>Frequent login fix</li>
+                    </ul>
+
+            <p/>v2.6.25<br/>
+                    <ul>
+                        <li>Profile screen</li>
+                        <li>On-Device Video Stream</li>
+                    </ul>
+
+            <p/>v2.5.6<br/>
+                    <ul>
+                        <li>Video Upload</li>
+                        <li>Feed Image Scaling improvement</li>
+                        <li>Improved logging</li>
+                        <li>Improved message ordering</li>
+                        <li>Auto check for updates</li>
+                        <li>Fix for incorrect badge counter (one time clean up needed)</li>
+                        <li>Improved message ordering</li>
+                        <li>Code improved to avoid the same message sent twice</li>
+                        <li>Usage of default privacy settings for notifications</li>
+                    </ul>
+
+            <p/>v2.4.0<br/>
+                    <ul>
+                        <li>Improved Conversation Layout (User Avatar, Direct link to user profile)</li>
+                        <li>Fixed issue of incorrect order of sent messages</li>
+                        <li>Improved bug tracking</li>
+                    </ul>
+
+            <p/>v2.3.2<br/>
+                    <ul>
+                        <li>Image crop before upload</li>
+                        <li>Improved retry strategy for pending messages</li>
+                        <li>Fixed back button behavior at the Settings screen</li>
+                        <li>Fixed issue with setting messages read from the App</li>
+                    </ul>
+
+            <p/>v2.2.1<br/>
+                    <ul>
+                        <li>Security Improvements</li>
+                        <li>Merging Vanilla and Kinky versions into one App</li>
+                        <li>Image upload Fix</li>
+                    </ul>
+
+            <p/>v2.1.3<br/>
+                    <ul>
+                        <li>Saving typed but not sent messages as a draft in case of accidentally or intentionally leaving a conversation</li>
+<li>Fix for crash after opening notification in case of using Feed as a starting screen</li>
+<li>Fix for unexpected app exiting after pressing the back button in case of using Feed as a starting screen</li>
+<li>Fix for connection issues after sending to long first message during initiating a conversation (regression fix)</li>
+<li>Fix for connection failed toast when starting a new conversation even if the message sending was successful</li>
+<li>Fix for archived conversation were still visible in the App and caused connection issues when they tried to be opened</li>
+<li>Fix for unfriended members still appeared in the App Friend list</li>
+<li>Removed unused pull to refresh functionality from App Notification History Screen</li>
+<li>Fix for empty Fetish Into feed items</li>
+                    </ul>
+
+            <p/>v2.0.0<br/>
+                    <ul>
+                        <li>Feed</li>
+                        <li>Pull to refresh</li>
+                    </ul>
+
+            <p/>v1.7<br/>
+                    <ul>
+                        <li>Caption for picture upload</li>
+                    </ul>
+
+            <p/>v1.6<br/>
+                    <ul>
+                        <li>Default Emoji Support</li>
+                    </ul>
+
+            <p/>v1.5<br/>
+                    <ul>
+                        <li>Notification Settings</li>
+                        <li>Auto password protection</li>
+                        <li>Kinky and Vanilla version (separate Apps)</li>
+                    </ul>
+
+            <p/>v1.4<br/>
+                    <ul>
+                        <li>Picture upload</li>
+                        <li>Timestamp field for Notification History Items</li>
+                        <li>Clear All menu option for Notification History</li>
+                    </ul>
+
+            <p/>v1.3<br/>
+                    <ul>
+                        <li>Receive broader set of Notification</li>
+                        <li>View your Notification History</li>
+                        <li>Get information about new features at about screen</li>
+                        <li>Use hardware menu button for opening the menu</li>
+                    </ul>
+
+            <p/>v1.2<br/>
+                    <ul>
+                        <li>Share your profile with others via NFC beam</li>
+                        <li>Accept shared profiles and create a new friend request at Friend Requests screen</li>
+                    </ul>
+
+            <p/>v1.1<br/>
+                    <ul>
+                        <li>View your list of incoming, pending friend requests</li>
+                        <li>Approve or Reject your pending friend requests</li>
+                    </ul>
+
+            <p/>v1.0<br/>
+                    <ul>
+                        <li>View your list of Conversations</li>
+                        <li>Read and respond to Conversations</li>
+                        <li>View your list of Friends</li>
+                        <li>Start new Conversation with a Friend</li>
+                        <li>Receive a push notification when you receive a new Message</li>
+                    </ul>
+
+            <p/>
+        ]]>
+    </string>
+
+    <!-- *** Error Messages *** -->
+
+    <string name="error_connection_failed">Server could not be reached. Please check your internet connection</string>
+    <string name="error_apicall_failed">Connection failed. Please try again later</string>
+    <string name="error_authentication_failed">Please login again for security reasons</string>
+    <string name="error_session_invalid">Please login again</string>
+
+    <!-- *** Menu items *** -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_members">Members</string>
+    <string name="menu_about">About</string>
+    <string name="menu_friendrequests">Friend Requests</string>
+    <string name="menu_introduce">Share My Profile</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_upload_photo">Upload Photo</string>
+    <string name="menu_upload_video">Upload Video</string>
+    <string name="menu_conversations">Conversations</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_feed">Feed</string>
+
+    <!-- *** Screen header *** -->
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_conversations">Conversations</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="title_activity_friends">Friends</string>
+    <string name="title_activity_friends_new_conversation">New Conversation</string>
+    <string name="title_activity_friendrequests">Friend Requests</string>
+    <string name="title_activity_about">About This App</string>
+    <string name="title_activity_notificationhistory">Notifications</string>
+    <string name="title_intent_choose_media_upload">Select Media App</string>
+    <string name="title_media_picture_upload_confirmation">Add your picture</string>
+    <string name="title_media_video_upload_confirmation">Add your video</string>
+
+    <!-- *** Settings texts *** -->
+
+    <string name="settings_category_general_start">Start Screen Setting</string>
+    <string name="settings_title_general_feed_as_start">Use Activity Feed as start screen</string>
+    <string name="settings_summary_general_feed_as_start">Show Activity Feed Screen after opening the App</string>
+    <string name="settings_category_general_vanilla">App Flavor Settings</string>
+    <string name="settings_title_general_vanilla">Go Vanilla</string>
+    <string name="settings_summary_general_vanilla">Use FL instead of FetLife as App name and use simple FL icon instead of FetLife logo as an App icon</string>
+    <!--
+    <string name="title_switch_flavor_confirmation">Changing App Flavor</string>
+    <string name="message_switch_flavor_confirmation">App will be closed after change.\nDo you want to continue?</string>
+    <string name="button_switch_flavor_confirmation">Continue</string>
+    <string name="button_switch_flavor_cancel">Cancel</string>
+    -->
+
+    <string name="settings_title_notifications">Notification Settings</string>
+    <string name="settings_summary_notifications">Manage when and how to receive notifications</string>
+    <string name="settings_category_notification_text">Notification Text</string>
+    <string name="settings_title_notification_anonymtext">Anonymous Notifications</string>
+    <string name="settings_summary_notification_anonymtext">Hide any details in incoming notifications and use a single general notification instead</string>
+    <string name="settings_category_notification_enablement">Enable Notifications</string>
+    <string name="settings_title_notification_messages_enabled">Message Notifications</string>
+    <string name="settings_summary_notification_messages_enabled">Enable Notifications for incoming Messages</string>
+    <string name="settings_title_notification_friendrequests_enabled">Friend Request Notifications</string>
+    <string name="settings_summary_notification_friendrequests_enabled">Enable Notifications for incoming Friend Requests</string>
+    <string name="settings_title_notification_prerelease_enabled">Pre-Release Notifications</string>
+    <string name="settings_summary_notification_prerelease_enabled">Enable Notifications about new preview releases</string>
+    <string name="settings_title_notification_others_enabled">Other Notifications</string>
+    <string name="settings_summary_notification_others_enabled">Enable Notifications for any other event</string>
+    <string name="settings_title_notification_loves_enabled">Love Notifications</string>
+    <string name="settings_summary_notification_loves_enabled">Enable Notifications about your stuff Loved by other users</string>
+    <string name="settings_title_notification_comments_enabled">Comment Notifications</string>
+    <string name="settings_summary_notification_comments_enabled">Enable Notifications about your stuff commented by other users</string>
+    <string name="settings_title_notification_mentions_enabled">Mention Notifications</string>
+    <string name="settings_summary_notification_mentions_enabled">Enable Notifications about you got mentioned by other users</string>
+
+
+    <string name="settings_title_notification_info_enabled">Info Notifications</string>
+    <string name="settings_summary_notification_info_enabled">Enable Notifications for information messages</string>
+    <string name="noification_title_new_one_or_more_notification">New Notification</string>
+    <string name="noification_text_new_anonym_notification">You have new notification waiting</string>
+    <string name="noification_text_new_anonym_notifications">You have %1$d new notifications waiting</string>
+    <string name="logon_check_remember_me">Remember me</string>
+    <string name="settings_title_profile">Profile Settings</string>
+    <string name="settings_summary_profile">Manage settings relevant to your FetLife App Profile</string>
+    <string name="settings_category_profile_login">Login Settings</string>
+    <string name="settings_title_profile_password_always">Always ask for password</string>
+    <string name="settings_summary_profile_password_always">Make the app to ask password each time after the App was sent to the background</string>
+    <string name="settings_category_profile_data">User Data Settings</string>
+    <string name="settings_title_profile_clear_data">Clear local User Data</string>
+    <string name="settings_summary_profile_clear_data">Clear all data related to current FetLife profile stored on this device. Also logs out you out and disable any further notifications sent to this user</string>
+
+    <string name="settings_category_notification_general">Notifications</string>
+    <string name="settings_title_notification_ringtone">Ringtone</string>
+    <string name="settings_summary_notification_ringtone">Select your Notification Ringtone.\nTo select a custom Notification first copy your notification file to the Notifications folder of your device.</string>
+
+    <string name="settings_title_notification_color">Notification Color</string>
+    <string name="settings_summary_notification_color">Color signal for notifications</string>
+
+    <string name="settings_title_notification_vibrate">Notification Vibration</string>
+    <string name="settings_summary_notification_vibrate">Vibration signal for notifications</string>
+
+    <string name="title_delete_user_data_confirmation">Delete local User Data</string>
+    <string name="message_delete_user_data_confirmation">Do you really want to delete all App local user data and logout?\nYou won\'t receive App notifications until you log in again</string>
+    <string name="button_delete_user_data_confirmation">Yes</string>
+    <string name="button_delete_user_data_cancel">Cancel</string>
+    <string name="button_media_picture_upload_hint_caption">Caption</string>
+    <string name="button_media_video_upload_hint_title">Title</string>
+    <string name="button_media_video_upload_hint_text">Text</string>
+    <string name="button_media_upload_check_friends_only">Only visible to friends</string>
+    <string name="message_friend_decision_failed">FetLife App: Your decision about friendship could not be sent as you had logged out before it could have been processed</string>
+
+    <!-- *** Feed texts *** -->
+
+    <string name="title_activity_feed">Feed</string>
+
+    <string name="feed_title_friends">%1$s became friends with %2$d users</string>
+    <string name="feed_title_new_post">uploaded a new writing</string>
+    <string name="feed_title_new_posts">posted %1$d new writings</string>
+    <string name="feed_title_new_grouppost">uploaded a new group post</string>
+    <string name="feed_title_new_groupposts">posted %1$d new group post</string>
+    <string name="feed_title_new_wallpost">uploaded a new wall post</string>
+    <string name="feed_title_new_wallposts">posted %1$d new wall post</string>
+    <string name="feed_title_group_join">joined a group</string>
+    <string name="feed_title_group_joins">joined to %1$d groups</string>
+    <string name="feed_title_new_picture">uploaded a new picture</string>
+    <string name="feed_title_new_pictures">uploaded %1$d new pictures</string>
+    <string name="feed_title_like_writing">loved a writing</string>
+    <string name="feed_title_like_writings">loved %1$d writings</string>
+    <string name="feed_title_like_video">loved a video</string>
+    <string name="feed_title_like_videos">loved %1$d videos</string>
+    <string name="feed_title_like_status">loved a status update</string>
+    <string name="feed_title_like_statuses">loved %1$d status updates</string>
+    <string name="feed_title_like_picture">loved a picture</string>
+    <string name="feed_title_like_pictures">loved %1$d pictures</string>
+    <string name="feed_title_like_unknown">Not yet supported Like Event</string>
+    <string name="feed_title_new_friend">became friends with a member</string>
+    <string name="feed_title_new_friends">became friends with %1$d members</string>
+    <string name="feed_title_new_follow">followed a member</string>
+    <string name="feed_title_new_follows">followed %1$d members</string>
+    <string name="feed_title_relation_unknown">Not yet supported relation event</string>
+
+    <string name="feed_title_rsvp_yes">is going to an event</string>
+    <string name="feed_title_rsvps_yes">is going to %1$d events</string>
+    <string name="feed_title_rsvp_maybe">is maybe going to an event</string>
+    <string name="feed_title_rsvps_maybe">is maybe going to %1$d events</string>
+    <string name="feed_title_new_comment">added a new comment</string>
+    <string name="feed_title_new_comments">added %1$d new comments</string>
+    <string name="feed_title_new_statuscomment">commented on a status update</string>
+    <string name="feed_title_new_statuscomments">commented on %1$d status updates</string>
+    <string name="feed_title_new_videocomment">commented on a video</string>
+    <string name="feed_title_new_videocomments">commented on %1$d videos</string>
+    <string name="feed_title_new_groupcomment">commented on a group post</string>
+    <string name="feed_title_new_groupcomments">commented on %1$d group posts</string>
+    <string name="feed_title_new_status">added a new status update</string>
+    <string name="feed_title_new_statuses">added %1$d status updates</string>
+    <string name="feed_title_new_postcomment">commented on a writing</string>
+    <string name="feed_title_new_postcomments">commented on %1$d writings</string>
+    <string name="feed_title_people_into_fetish">is into a fetish</string>
+    <string name="feed_title_people_into_fetishes">is into %1$d fetishes</string>
+    <string name="feed_caption_member_count" >%1$d members</string>
+
+    <string name="settings_title_feed">Feed Settings</string>
+    <string name="settings_summary_feed">Settings about how the feed stories should be displayed on the feed screen</string>
+    <string name="settings_category_feed_autoexpand">Auto Expand Feed Stories</string>
+    <string name="settings_title_feed_auto_expand_like">New Loves</string>
+    <string name="settings_summary_feed_auto_expand_like">Auto expand feed stories about when a followed user loved something</string>
+    <string name="settings_title_feed_auto_expand_relation">New Relations</string>
+    <string name="settings_summary_feed_auto_expand_relation">Auto expand feed stories about when a followed user became friends with someone</string>
+    <string name="settings_title_feed_auto_expand_profile">Profile updates</string>
+    <string name="settings_summary_feed_auto_expand_profile">Auto expand feed stories about various profile related changes</string>
+    <string name="settings_title_feed_auto_expand_comment">New Comments</string>
+    <string name="settings_summary_feed_auto_expand_comment">Auto expand feed stories about user comments</string>
+    <string name="settings_title_feed_auto_expand_post">New Post</string>
+    <string name="settings_summary_feed_auto_expand_post">Auto expand feed stories about when a user posted new a writing</string>
+    <string name="settings_title_feed_auto_expand_event">RSVP</string>
+    <string name="settings_summary_feed_auto_expand_event">Auto expand feed stories about when a user got interested in an event</string>
+    <string name="settings_title_feed_auto_expand_group">Group Story</string>
+    <string name="settings_summary_feed_auto_expand_group">Auto expand feed stories about when a user got interested in a group</string>
+    <string name="settings_title_feed_auto_expand_media">New Media</string>
+    <string name="settings_summary_feed_auto_expand_media">Auto expand feed stories about when a user uploaded a new picture or video</string>
+
+    <string name="pojo_value_fetish_status_giving">giving</string>
+    <string name="pojo_value_fetish_status_receiving">receiving</string>
+    <string name="pojo_value_fetish_status_watching">watching</string>
+    <string name="pojo_value_fetish_status_wearing">wearing</string>
+    <string name="pojo_value_fetish_status_watching_others_wear">watching others wear</string>
+    <string name="pojo_value_fetish_status_everything_to_do_with_it">everything to do with</string>
+    <string name="pojo_value_fetish_activity_into">%1$s is into %2$s %3$s</string>
+    <string name="pojo_value_fetish_activity_curious_about">%1$s is curious about %2$s %3$s</string>
+    <string name="pojo_value_fetish_activity_soft_limit">%2$s %3$s is soft limit for %1$s</string>
+    <string name="pojo_value_fetish_activity_hard_limit">%2$s %3$s is hard limit for %1$s</string>
+
+
+    <!-- *** Strings for Notification History screen *** -->
+
+    <string name="text_notificationhistoryitem_toremove">Delete</string>
+    <string name="text_notificationhistoryitem_removed">Deleted</string>
+    <string name="notificationhistory_activity_hint">Swipe left to delete notification</string>
+    <string name="action_clear_notification_history">Clear all</string>
+
+
+    <!-- *** Strings for Login screen *** -->
+
+    <string name="action_log_on">Log me in</string>
+    <string name="progress_logging_in">Logging you in...</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_new_message">Your message here</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="sign_up">Sign up Now!</string>
+    <string name="forgot_login">Forgot your login info?</string>
+
+
+    <!-- *** Strings for RelationReference Requests screen *** -->
+
+    <string name="text_friendrequests_rejected">Rejected</string>
+    <string name="text_friendrequests_accepted">Accepted</string>
+    <string name="text_friendrequests_toaccept">Accept</string>
+    <string name="text_friendrequests_toreject">Reject</string>
+    <string name="friendrequest_activity_hint">Swipe right to accept; left to reject</string>
+    <string name="header_friendrequest">Friend Requests</string>
+    <string name="header_friendsuggestion">Shared Profiles</string>
+
+
+    <!-- *** Strings for making new friends *** -->
+
+    <string name="message_nfc_not_available">This feature requires NFC communication.</string>
+    <string name="message_android_version_not_sufficient">This feature requires a higher Android version.</string>
+    <string name="message_nfc_turned_off">Please turn on NFC to enable this feature</string>
+    <string name="nfc_tap_your_device">Tap your device to another Android device to activate the beam</string>
+
+
+    <!-- *** Strings for Photo Upload *** -->
+
+    <string name="message_image_upload_started">Beaming up your photo ...</string>
+    <string name="message_image_upload_finished">Your photo has been uploaded</string>
+    <string name="message_image_upload_failed">Photo upload has failed. Try again later</string>
+
+    <string name="message_media_picture_upload_confirmation">I certify this picture is of me, or that I have explicit permission to post it on FetLife.\nI tell no lie</string>
+    <string name="message_media_video_upload_confirmation">I certify this video is of me, or that I have explicit permission to post it on FetLife.\nI tell no lie</string>
+    <string name="button_media_upload_confirmation">Certify</string>
+    <string name="button_media_upload_cancel">Cancel</string>
+
+    <string name="notification_video_upload_title">Video upload</string>
+    <string name="notification_picture_upload_title">Picture upload</string>
+    <string name="notification_media_upload_text_inprogress">uploading %1$d / %2$d MBytes</string>
+    <string name="notification_media_upload_text_being_cancelled">being cancelled</string>
+
+    <string name="message_video_upload_started">Beaming up your video ...</string>
+    <string name="message_video_upload_finished">Your Video has been uploaded</string>
+    <string name="message_video_upload_failed">Video upload has failed. Try again later</string>
+    <string name="message_video_upload_failed_file_size">Video upload has failed. Video size should be maximum %1$d MBytes</string>
+    <string name="message_video_upload_cancelled">Video upload has been cancelled.</string>
+    <string name="message_video_upload_being_cancelled">Video upload is being cancelled.</string>
+    <string name="message_video_upload_cancel_failed">Video upload could not be cancelled.</string>
+
+    <!-- *** Other Strings *** -->
+
+    <string name="text_unknown">unknown</string>
+    <string name="new_message_indication">NEW</string>
+
+    <string name="action_undo">UNDO</string>
+    <string name="undo_no_longer_possible">Undo is no longer possible</string>
+
+    <string name="snackbar_version_notification">Check out what\'s new in v%1$s at \'About\' screen</string>
+
+    <string name="input_message_description">Your Message</string>
+    <string name="button_new_conversation_discription">New Conversation</string>
+    <string name="button_send_description">Send Message</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_title_general">General Settings</string>
+    <string name="settings_summary_general">Manage general App settings</string>
+    <string name="notification_title_new_release">New FetLife App release</string>
+    <string name="notification_toast_new_release">New FetLife App version is available</string>
+    <string name="notification_text_new_release">Download FetLife App version %1$s\nfor tha latest features and bug fixes.</string>
+    <string name="notification_title_new_prerelease">New FetLife App pre-release</string>
+    <string name="notification_toast_new_prerelease">New FetLife App Preview version is available</string>
+    <string name="notification_text_new_prerelease">Download FetLife App Preview version %1$s\nto test upcoming features.</string>
+    <string name="message_friend_request_sent">Friend Request has been sent to %1$s</string>
+    <string name="message_follow_set">You are following %1$s</string>
+    <string name="message_unfollow_set">You are no longer following %1$s</string>
+
+    <string name="menu_profile_friend">Friend</string>
+    <string name="menu_profile_follow">Follow</string>
+    <string name="menu_profile_message">Message</string>
+    <string name="menu_profile_view">View</string>
+
+    <string name="text_profile_location">%2$s, %1$s</string>
+    <string name="text_profile_header_location">Location:</string>
+    <string name="text_profile_header_orientation">Orientation:</string>
+    <string name="text_profile_header_looking_for">Looking For:</string>
+    <string name="text_profile_header_relationships">Relationships:</string>
+    <string name="title_fragment_profile_info">Basic Info</string>
+    <string name="title_fragment_profile_about">About</string>
+    <string name="title_fragment_profile_statuses">Statuses</string>
+    <string name="title_fragment_profile_pictures">Pictures</string>
+    <string name="title_fragment_profile_videos">Videos</string>
+    <string name="title_fragment_profile_friends">Friends</string>
+    <string name="title_fragment_profile_following">Following</string>
+    <string name="title_fragment_profile_followers">Followers</string>
+    <string name="text_profile_lookingfor_ltr">A lifetime relationship</string>
+    <string name="text_profile_lookingfor_relationship">A relationship</string>
+    <string name="text_profile_lookingfor_teacher">A mentor/teacher</string>
+    <string name="text_profile_lookingfor_playpartner">A play partner</string>
+    <string name="text_profile_lookingfor_princessslut">Princess by day, slut by night</string>
+    <string name="text_profile_lookingfor_friendship">Friendship</string>
+    <string name="text_profile_lookingfor_slave">A slave</string>
+    <string name="text_profile_lookingfor_sub">A sub</string>
+    <string name="text_profile_lookingfor_master">A Master</string>
+    <string name="text_profile_lookingfor_mistress">A Mistress</string>
+    <string name="text_profile_lookingfor_events">Events</string>
+    <string name="text_profile_orientation_straight">Straight</string>
+    <string name="text_profile_orientation_heteroflexible">Heteroflexible</string>
+    <string name="text_profile_orientation_bisexual">Bisexual</string>
+    <string name="text_profile_orientation_homoflexible">Homoflexible</string>
+    <string name="text_profile_orientation_gay">Gay</string>
+    <string name="text_profile_orientation_lesbian">Lesbian</string>
+    <string name="text_profile_orientation_queer">Queer</string>
+    <string name="text_profile_orientation_pansexual">Pansexual</string>
+    <string name="text_profile_orientation_evolving">Fluctuating/Evolving</string>
+    <string name="text_profile_orientation_asexual">Asexual</string>
+    <string name="text_profile_orientation_unsure">Unsure</string>
+    <string name="text_profile_orientation_na">Not Applicable</string>
+    <string name="title_dialog_cancel_friendship">Friendship</string>
+    <string name="message_dialog_cancel_friendship">You are already Friends.\nDo you want to cancel your friendship?</string>
+    <string name="button_dialog_yes">Yes</string>
+    <string name="button_dialog_no">No</string>
+    <string name="title_dialog_cancel_friendrequest">Friend Request Sent</string>
+    <string name="title_dialog_approve_friendrequest">Incoming Friend Request</string>
+    <string name="title_dialog_send_friendrequest">New Friendship</string>
+    <string name="message_dialog_send_friendrequest">You are not friends yet. Do you want to send a Friend Request?</string>
+    <string name="message_dialog_approve_friendrequest">Friend request is waiting for your approval.\nDo you want to check it out now?</string>
+    <string name="message_dialog_cancel_friendrequest">Friend request has been already sent.\nDo you want to cancel it?</string>
+
+    <string name="text_profile_relationship_with_member_slave">slave of %1$s</string>
+    <string name="text_profile_relationship_slave">slave</string>
+    <string name="text_profile_relationship_with_member_dominant">Dominant of %1$s</string>
+    <string name="text_profile_relationship_with_member_sadist">Sadist to %1$s</string>
+    <string name="text_profile_relationship_with_member_sadomasochist">Sadomasochist to %1$s</string>
+    <string name="text_profile_relationship_with_member_master">Master of %1$s</string>
+    <string name="text_profile_relationship_with_member_mistress">Mistress of %1$s</string>
+    <string name="text_profile_relationship_with_member_owner">Owner of %1$s</string>
+    <string name="text_profile_relationship_with_member_mistress_and_owner">Mistress and Owner of %1$s</string>
+    <string name="text_profile_relationship_with_member_master_owner">Master and Owner of %1$s</string>
+    <string name="text_profile_relationship_with_member_top">Top of %1$s</string>
+    <string name="text_profile_relationship_with_member_daddy">Daddy of %1$s</string>
+    <string name="text_profile_relationship_with_member_mommy">Mommy of %1$s</string>
+    <string name="text_profile_relationship_with_member_brother">Brother of %1$s</string>
+    <string name="text_profile_relationship_with_member_sister">Sister of %1$s</string>
+    <string name="text_profile_relationship_with_member_being_served">Being Served by %1$s</string>
+    <string name="text_profile_relationship_with_member_considering">Considering %1$s</string>
+    <string name="text_profile_relationship_with_member_protecting">Protecting %1$s</string>
+    <string name="text_profile_relationship_with_member_mentoring">Mentoring %1$s</string>
+    <string name="text_profile_relationship_with_member_teaching">Teaching %1$s</string>
+    <string name="text_profile_relationship_with_member_training">Training %1$s</string>
+    <string name="text_profile_relationship_with_member_switches">Switches with %1$s</string>
+    <string name="text_profile_relationship_with_member_submissive">submissive of %1$s</string>
+    <string name="text_profile_relationship_with_member_masochist">masochist to %1$s</string>
+    <string name="text_profile_relationship_with_member_bottom">bottom of %1$s</string>
+    <string name="text_profile_relationship_with_member_owned">owned by %1$s</string>
+    <string name="text_profile_relationship_with_member_owned_and_collared">owned and collared by %1$s</string>
+    <string name="text_profile_relationship_with_member_collared">collared by %1$s</string>
+    <string name="text_profile_relationship_with_member_kajira">kajira of %1$s</string>
+    <string name="text_profile_relationship_with_member_kajirus">kajirus of %1$s</string>
+    <string name="text_profile_relationship_with_member_property">property of %1$s</string>
+    <string name="text_profile_relationship_with_member_inservice">in service to %1$s</string>
+    <string name="text_profile_relationship_with_member_under_protection">under protection of %1$s</string>
+    <string name="text_profile_relationship_with_member_under_consideration">under consideration by %1$s</string>
+    <string name="text_profile_relationship_with_member_pet">pet of %1$s</string>
+    <string name="text_profile_relationship_with_member_toy">toy of %1$s</string>
+    <string name="text_profile_relationship_with_member_boy">boy of %1$s</string>
+    <string name="text_profile_relationship_with_member_girl">girl of %1$s</string>
+    <string name="text_profile_relationship_with_member_babygirl">babygirl of %1$s</string>
+    <string name="text_profile_relationship_with_member_babyboy">babyboy of %1$s</string>
+    <string name="text_profile_relationship_with_member_brat">brat of %1$s</string>
+    <string name="text_profile_relationship_with_member_keyholder">Keyholder of %1$s</string>
+    <string name="text_profile_relationship_with_member_inchastity">in chastity to %1$s</string>
+    <string name="text_profile_relationship_with_member_being_mentored">being mentored by %1$s</string>
+    <string name="text_profile_relationship_with_member_student">student of %1$s</string>
+    <string name="text_profile_relationship_with_member_trainee">trainee of %1$s</string>
+    <string name="text_profile_relationship_unowned">unowned</string>
+    <string name="text_profile_relationship_unpartnered">unpartnered</string>
+    <string name="text_profile_relationship_with_member_its_complicated">It\'s Complicated with %1$s</string>
+    <string name="text_profile_relationship_presently_inactive">Presently Inactive</string>
+    <string name="text_profile_relationship_not_applicable">Not Applicable</string>
+    <string name="text_profile_relationship_dominant">Dominant</string>
+    <string name="text_profile_relationship_sadist">Sadist</string>
+    <string name="text_profile_relationship_sadomasochist">Sadomasochist</string>
+    <string name="text_profile_relationship_master">Master</string>
+    <string name="text_profile_relationship_mistress">Mistress</string>
+    <string name="text_profile_relationship_owner">Owner</string>
+    <string name="text_profile_relationship_mistress_and_owner">Mistress and Owner</string>
+    <string name="text_profile_relationship_master_owner">Master and Owner</string>
+    <string name="text_profile_relationship_top">Top</string>
+    <string name="text_profile_relationship_daddy">Daddy</string>
+    <string name="text_profile_relationship_mommy">Mommy</string>
+    <string name="text_profile_relationship_brother">Brother</string>
+    <string name="text_profile_relationship_sister">Sister</string>
+    <string name="text_profile_relationship_being_served">Being Served</string>
+    <string name="text_profile_relationship_considering">Considering</string>
+    <string name="text_profile_relationship_protecting">Protecting</string>
+    <string name="text_profile_relationship_mentoring">Mentoring</string>
+    <string name="text_profile_relationship_teaching">Teaching</string>
+    <string name="text_profile_relationship_training">Training</string>
+    <string name="text_profile_relationship_switches">Switches</string>
+    <string name="text_profile_relationship_submissive">submissive</string>
+    <string name="text_profile_relationship_masochist">masochist</string>
+    <string name="text_profile_relationship_bottom">bottom</string>
+    <string name="text_profile_relationship_owned">owned</string>
+    <string name="text_profile_relationship_owned_and_collared">owned and collared</string>
+    <string name="text_profile_relationship_collared">collared</string>
+    <string name="text_profile_relationship_property">property</string>
+    <string name="text_profile_relationship_kajira">kajira</string>
+    <string name="text_profile_relationship_kajirus">kajirus</string>
+    <string name="text_profile_relationship_inservice">in service</string>
+    <string name="text_profile_relationship_under_protection">under protection</string>
+    <string name="text_profile_relationship_under_consideration">under consideration</string>
+    <string name="text_profile_relationship_pet">pet</string>
+    <string name="text_profile_relationship_toy">toy</string>
+    <string name="text_profile_relationship_boy">boy</string>
+    <string name="text_profile_relationship_girl">girl</string>
+    <string name="text_profile_relationship_babygirl">babygirl</string>
+    <string name="text_profile_relationship_babyboy">babyboy</string>
+    <string name="text_profile_relationship_brat">brat</string>
+    <string name="text_profile_relationship_keyholder">Keyholder</string>
+    <string name="text_profile_relationship_inchastity">in chastity</string>
+    <string name="text_profile_relationship_being_mentored">being mentored</string>
+    <string name="text_profile_relationship_student">student</string>
+    <string name="text_profile_relationship_trainee">trainee</string>
+    <string name="text_profile_relationship_its_complicated">It\'s Complicated</string>
+    <string name="text_profile_relationship_single">Single</string>
+    <string name="text_profile_relationship_with_member_dating">Dating %1$s</string>
+    <string name="text_profile_relationship_dating">Dating</string>
+    <string name="text_profile_relationship_with_member_friend_with_benefits">Friend With Benefits of  %1$s</string>
+    <string name="text_profile_relationship_with_member_play_partners">Play Partners with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_a_relationship">In A Relationship with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_an_open_relationship">In An Open Relationship with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_lover">Lover of %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_engaged">Engaged to %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_married">Married to %1$s</string>
+    <string name="text_profile_relationship_widow">Widow</string>
+    <string name="text_profile_relationship_widower">Widower</string>
+    <string name="text_profile_relationship_with_member_friend_with_monogamous">Monogamous with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_polyamorous">Polyamorous with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_a_poly_group">In A Poly Group with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_a_leather_family">In A Leather Family with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_a_pack">In a Pack with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_in_a_rope_family">In a Rope Family with %1$s</string>
+    <string name="text_profile_relationship_with_member_friend_with_member_of_a_house">Member Of A House with %1$s</string>
+    <string name="text_profile_relationship_monogamous">Monogamous</string>
+    <string name="text_profile_relationship_friend_with_benefits">Friend With Benefits</string>
+    <string name="text_profile_relationship_play_partners">Play Partners</string>
+    <string name="text_profile_relationship_in_a_relationship">In A Relationship</string>
+    <string name="text_profile_relationship_in_an_open_relationship">In An Open Relationship</string>
+    <string name="text_profile_relationship_lover">Lover</string>
+    <string name="text_profile_relationship_engaged">Engaged</string>
+    <string name="text_profile_relationship_married">Married</string>
+    <string name="text_profile_relationship_polyamorous">Polyamorous</string>
+    <string name="text_profile_relationship_in_a_poly_group">In A Poly Group</string>
+    <string name="text_profile_relationship_in_a_leather_family">In A Leather Family</string>
+    <string name="text_profile_relationship_in_a_pack">In a Pack</string>
+    <string name="text_profile_relationship_in_a_rope_family">In a Rope Family</string>
+    <string name="text_profile_relationship_member_of_a_house">Member Of A House</string>
+    <string name="title_dialog_reset_settings">Reset Settings</string>
+    <string name="message_dialog_reset_settings">Your settings has been reset to their default value.\nPlease take a minute after login to reset them to the desired values.</string>
+    <string name="title_fragment_profile_feed">Activity</string>
+    <string name="menu_updates">Check for updates</string>
+    <string name="message_toast_checking_for_updates">Checking for updates...</string>
+    <string name="message_toast_no_update_found">No update found\nYou are using the latest version</string>
+    <string name="title_activity_members">Members</string>
+    <string name="action_search">Search</string>
+    <string name="title_fragment_member_serach">Search</string>
+    <string name="noification_title_new_message">New private message</string>
+    <string name="noification_title_new_messages">%1$d new private messages</string>
+    <string name="noification_text_new_message">New message from %1$s</string>
+    <string name="noification_text_new_messages">%1$d messages from %2$s</string>
+    <string name="noification_title_new_friendrequest">New Friend Request</string>
+    <string name="noification_title_new_friendrequests">%1$d new Friend Requests</string>
+    <string name="noification_text_new_love">%1$s loved your stuff</string>
+    <string name="noification_text_new_comment">%1$s commented your stuff</string>
+    <string name="noification_text_new_mention">%1$s mentioned you</string>
+    <string name="noification_title_new_loves">You received new loves</string>
+    <string name="noification_title_new_comments">You received new comments</string>
+    <string name="noification_title_new_mentions">You were mentioned</string>
+
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bitlove.fetlife">
+
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+
+    <!-- Large Heap added as a workaround to issue with Fresco library in case of large image lists.
+    TODO: investigate further and check what can we do from App side, like fine-tuning images sizes -->
+    <application
+        android:name=".FetLifeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon_kinky"
+        android:largeHeap="true"
+        android:label="@string/app_name_kinky"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <receiver
+            android:name=".inbound.OneSignalBackgroundDataReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.BackgroundBroadcast.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".model.service.ServiceCallCancelReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.bitlove.fetlife.ServiceCallCancelReceiver.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.Transparent">
+        </activity>
+
+        <activity-alias android:label="@string/app_name_kinky"
+            android:icon="@mipmap/app_icon_kinky"
+            android:name=".StartActivity_Kinky"
+            android:enabled="true"
+            android:targetActivity=".StartActivity">
+            <intent-filter android:label="@string/app_name_kinky">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias android:label="@string/app_name_vanilla"
+            android:icon="@mipmap/app_icon_vanilla"
+            android:name=".StartActivity_Vanilla"
+            android:enabled="false"
+            android:targetActivity=".StartActivity">
+            <intent-filter android:label="@string/app_name_vanilla">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".view.screen.standalone.LoginActivity"
+            android:label="@string/app_name_kinky"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.screen.resource.ConversationsActivity"
+            android:label="@string/title_activity_conversations"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.screen.resource.NotificationHistoryActivity"
+            android:label="@string/title_activity_notificationhistory"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.screen.resource.MessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.screen.resource.FeedActivity"
+            android:label="@string/title_activity_feed"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.screen.resource.FriendsActivity"
+            android:label="@string/title_activity_friends"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.screen.resource.members.MembersActivity"
+            android:label="@string/title_activity_members"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.screen.resource.FriendRequestsActivity"
+            android:label="@string/title_activity_friendrequests"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.screen.standalone.AddNfcFriendActivity"
+            android:theme="@style/AppTheme.Dialog.Transparent"></activity>
+
+        <activity
+            android:name=".inbound.NfcFriendActivity"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.com.bitlove.fetlife" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.screen.standalone.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".view.screen.standalone.SettingsActivity"
+            android:theme="@style/AppTheme.Light_Accent"
+            android:label="@string/title_activity_settings"></activity>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+        <activity
+            android:name=".view.screen.resource.profile.ProfileActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name=".model.service.FetLifeApiIntentService"
+            android:exported="false" />
+
+        <service
+            android:name=".inbound.OneSignalNotificationExtenderService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".inbound.NetworkStateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.bitlove.fetlife.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="${fabricApiKey}" />
+
+    </application>
+
+</manifest>

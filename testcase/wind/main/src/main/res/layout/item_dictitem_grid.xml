@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp">
+
+    <TextView
+        android:id="@id/tag_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@id/tag_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/preview_image_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/tag_image"
+            android:layout_width="@dimen/preview_image_width"
+            android:layout_height="@dimen/preview_image_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="92dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@id/tag_download"
+                style="@style/mainGridViewButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/preview_button_height"
+                android:layout_marginTop="4dp"
+                android:text="@string/download"/>
+
+            <Button
+                android:id="@id/tag_sample"
+                style="@style/mainGridViewButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/preview_button_height"
+                android:layout_marginTop="4dp"
+                android:text="@string/sample"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_value_notification_color_none">none</string>
+    <string name="settings_value_notification_color_white">white</string>
+    <string name="settings_value_notification_color_red">red</string>
+    <string name="settings_value_notification_color_yellow">yellow</string>
+    <string name="settings_value_notification_color_green">green</string>
+    <string name="settings_value_notification_color_cyan">cyan</string>
+    <string name="settings_value_notification_color_blue">blue</string>
+    <string name="settings_value_notification_color_magenta">magenta</string>
+
+    <string name="settings_value_notification_vibration_default">default</string>
+    <string name="settings_value_notification_vibration_off">off</string>
+    <string name="settings_value_notification_vibration_short">short</string>
+    <string name="settings_value_notification_vibration_long">long</string>
+
+    <string-array name="settings_entries_notification_color">
+        <item>None</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string-array name="settings_values_notification_color">
+        <item>@string/settings_value_notification_color_none</item>
+        <item>@string/settings_value_notification_color_white</item>
+        <item>@string/settings_value_notification_color_red</item>
+        <item>@string/settings_value_notification_color_yellow</item>
+        <item>@string/settings_value_notification_color_green</item>
+        <item>@string/settings_value_notification_color_cyan</item>
+        <item>@string/settings_value_notification_color_blue</item>
+        <item>@string/settings_value_notification_color_magenta</item>
+    </string-array>
+
+    <string-array name="settings_entries_notification_vibrate">
+        <item>Default</item>
+        <item>Off</item>
+        <item>Short</item>
+        <item>Long</item>
+    </string-array>
+
+    <string-array name="settings_values_notification_vibrate">
+        <item>@string/settings_value_notification_vibration_default</item>
+        <item>@string/settings_value_notification_vibration_off</item>
+        <item>@string/settings_value_notification_vibration_short</item>
+        <item>@string/settings_value_notification_vibration_long</item>
+    </string-array>
+
+</resources>
